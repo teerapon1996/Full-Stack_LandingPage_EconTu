@@ -1,8 +1,8 @@
-#Development by Teerapon Meesuk
+# Development by Teerapon Meesuk
 - Full Stack website landing
 - Postgres Database in .env file
 
-# Deploy Landing
+## Deploy Landing
 ### Start Run Landing Page
 
 - Command to Landing Folder
