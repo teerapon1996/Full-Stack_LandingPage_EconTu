@@ -1,0 +1,293 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-15 13:58+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: backend/urls.py:13
+msgid "admin/"
+msgstr ""
+
+#: landing/templates/footer.html:10 landing/templates/index_v1.html:123
+msgid "Contact Us"
+msgstr "ติดต่อเรา"
+
+#: landing/templates/index.html:27 landing/templates/index_v1.html:23
+msgid "Our News and Release"
+msgstr "ข่าวสารและประชาสัมพันธ์"
+
+#: landing/templates/index.html:29 landing/templates/index_v1.html:25
+msgid "See more"
+msgstr "ดูเพิ่มเติม"
+
+#: landing/templates/index.html:41 landing/templates/index_v1.html:35
+#: landing/templates/news.html:41 landing/templates/newsAll.html:14
+msgid "View News"
+msgstr "ดูข่าว"
+
+#: landing/templates/index.html:56 landing/templates/index_v1.html:53
+#: landing/templates/news.html:62 landing/templates/newsAll.html:30
+#, fuzzy
+#| msgid "  Oops, not any news. Please try add data news."
+msgid "  404 Not Found, not any news. Please try add data news."
+msgstr "  404 ไม่พบข้อมูล, ไม่มีข่าวใดๆเลย โปรดลองเพิ่มข้อมูลข่าว"
+
+#: landing/templates/index.html:61 landing/templates/index_v1.html:57
+msgid "Superset 1"
+msgstr ""
+
+#: landing/templates/index.html:65 landing/templates/index_v1.html:64
+msgid "Superset 2"
+msgstr ""
+
+#: landing/templates/index.html:71 landing/templates/knowledge.html:24
+#, fuzzy
+#| msgid "Knowledge Graph"
+msgid "Knowledge Graph Explorer"
+msgstr "กราฟความรู้"
+
+#: landing/templates/index.html:72 landing/templates/knowledge.html:26
+msgid ""
+"The career database survey system for research studies. By displaying the "
+"results in a dot graph (Scatter Plot), you can see an overview of the career "
+"data."
+msgstr ""
+"ระบบสำรวจฐานข้อมูลอาชีพเพื่อการศึกษาวิจัย โดยแสดงผล "
+"ผลลัพธ์ในรูปแบบดอทกราฟ (Scatter Plot) สามารถดูภาพรวมของอาชีพได้"
+"ข้อมูล."
+
+#: landing/templates/index.html:80 landing/templates/index_v1.html:78
+msgid "Help we know what you want?"
+msgstr "ช่วยบอกให้เรารู้ ว่าคุณต้องการอะไร?"
+
+#: landing/templates/index.html:88 landing/templates/index_v1.html:99
+msgid "Explore"
+msgstr "สำรวจ"
+
+#: landing/templates/index.html:100 landing/templates/index_v1.html:87
+msgid "Find Data"
+msgstr "ค้นหาข้อมูล"
+
+#: landing/templates/index.html:113 landing/templates/index_v1.html:111
+msgid "Find Skill"
+msgstr "ค้นหาสกิล"
+
+#: landing/templates/index_v1.html:70
+msgid "Lorem Ipsum"
+msgstr "ลอเรม อิปซัม"
+
+#: landing/templates/index_v1.html:71 landing/templates/knowledge_v1.html:7
+#: landing/templates/knowledge_v1.html:22
+msgid ""
+"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+"Lorem Ipsum has been the industry's standard dummy text ever since the "
+"1500s, when an unknown printer took a galley of type and scrambled it to "
+"make a type specimen book. It has survived not only five centuries, but also "
+"the leap into electronic typesetting."
+msgstr ""
+"เป็นเพียงข้อความจำลองของอุตสาหกรรมการพิมพ์และการเรียงพิมพ์ Lorem Ipsum "
+"เป็นข้อความจำลองมาตรฐานของอุตสาหกรรมนับตั้งแต่ค.ศ. 1500 "
+"เมื่อเครื่องพิมพ์ที่ไม่รู้จักนำถังประเภทหนึ่งมาและแย่งชิงไปทำหนังสือตัวอย่างประเภท "
+"มันรอดมาได้ไม่เพียงแค่ห้าศตวรรษแต่ยังก้าวกระโดดสู่การเรียงพิมพ์อิเล็กทรอนิกส์"
+
+#: landing/templates/jobProfile.html:88 landing/templates/recentJob.html:32
+#, fuzzy
+#| msgid "  Oops, not any news. Please try add data news."
+msgid "  404 Not Found, not any news. Please try add Job."
+msgstr "  404 ไม่พบข้อมูล, ไม่มีข่าวใดๆเลย โปรดลองเพิ่มข้อมูลข่าว"
+
+#: landing/templates/knowledge.html:4
+#, fuzzy
+#| msgid "Knowledge Graph"
+msgid "Knowledge Graph Skill Strategy"
+msgstr "กราฟความรู้"
+
+#: landing/templates/knowledge.html:6
+msgid ""
+"The searching system for necessary occupational skills in the future, using "
+"data analytics technology with Knowledge Graph, you can develop your own "
+"skills to meet the needs of the future labor market. Increase career "
+"advancement opportunities. Ready to keep up with the changing of the future "
+"labor market"
+msgstr ""
+"ระบบค้นหาทักษะการประกอบอาชีพที่จำเป็นในอนาคต โดยใช้"
+"เทคโนโลยีวิเคราะห์ข้อมูลด้วยกราฟความรู้ คุณพัฒนาได้เอง"
+"ทักษะสนองความต้องการของตลาดแรงงานในอนาคต เพิ่มอาชีพ"
+"โอกาสก้าวหน้า พร้อมก้าวทันการเปลี่ยนแปลงของอนาคต"
+"ตลาดแรงงาน"
+
+#: landing/templates/knowledge.html:10 landing/templates/knowledge_v1.html:31
+msgid "Find more Knowledge Graph"
+msgstr "ค้นหากราฟความรู้เพิ่มเติม"
+
+#: landing/templates/knowledge.html:14
+msgid "Data Platform"
+msgstr ""
+
+#: landing/templates/knowledge.html:16
+msgid ""
+"The comprehensive data management platform that covers Data Importing, "
+"Exploring, Reviewing and Analyzing data. The platform enhance the service of "
+"information and descriptions in a systematic way."
+msgstr ""
+"แพลตฟอร์มการจัดการข้อมูลที่ครอบคลุมซึ่งครอบคลุมการนำเข้าข้อมูล"
+"สำรวจ ทบทวน และวิเคราะห์ข้อมูล แพลตฟอร์มยกระดับบริการของ"
+"ข้อมูลและคำอธิบายอย่างเป็นระบบ"
+
+#: landing/templates/knowledge.html:20
+#, fuzzy
+#| msgid "Find Data"
+msgid "Fine More Data"
+msgstr "ค้นหาข้อมูล"
+
+#: landing/templates/knowledge.html:30 landing/templates/knowledge_v1.html:17
+msgid "Find More Governance Platform"
+msgstr "ค้นหาแพลตฟอร์มการกำกับดูแลเพิ่มเติม"
+
+#: landing/templates/knowledge_v1.html:5
+msgid "Explore our Data Governance Platform"
+msgstr "สำรวจแพลตฟอร์มการกำกับดูแลข้อมูลของเรา"
+
+#: landing/templates/knowledge_v1.html:20
+msgid "Explore our Knowledge Graph"
+msgstr "สำรวจกราฟความรู้ของเรา"
+
+#: landing/templates/layout.html:52 landing/templates/layout.html:85
+#: landing/templates/layout.html:87 landing/templates/layout.html:152
+#: landing/templates/newsDetail.html:5
+msgid "Home"
+msgstr "หน้าหลัก"
+
+#: landing/templates/layout.html:57 landing/templates/layout.html:156
+msgid "Knowledge"
+msgstr "กราฟ"
+
+#: landing/templates/layout.html:57 landing/templates/layout.html:156
+msgid "Graph"
+msgstr "ความรู้"
+
+#: landing/templates/layout.html:61 landing/templates/layout.html:160
+msgid "Data"
+msgstr "ข้อมูล"
+
+#: landing/templates/layout.html:61 landing/templates/layout.html:160
+msgid "Discovery"
+msgstr ""
+
+#: landing/templates/layout.html:66 landing/templates/layout.html:165
+msgid "Workflow"
+msgstr "เวิร์กโฟลว์"
+
+#: landing/templates/layout.html:70 landing/templates/layout.html:169
+msgid "Superset"
+msgstr "Superset"
+
+#: landing/templates/layout.html:92 landing/templates/layout.html:94
+msgid "Knowledge Graph"
+msgstr "กราฟความรู้"
+
+#: landing/templates/layout.html:99 landing/templates/layout.html:101
+#: landing/templates/news.html:25 landing/templates/newsAll.html:5
+msgid "News"
+msgstr "ข่าวสาร"
+
+#: landing/templates/layout.html:106 landing/templates/layout.html:108
+msgid "Job Opportunities"
+msgstr "โอกาสในการทำงาน"
+
+#: landing/templates/layout.html:115 landing/templates/layout.html:117
+msgid "+Add News"
+msgstr "+เพิ่มข่าว"
+
+#: landing/templates/layout.html:125
+msgid "English"
+msgstr "ภาษาไทย"
+
+#: landing/templates/layout.html:179
+msgid "Logout"
+msgstr "ออกจากระบบ"
+
+#: landing/templates/layout.html:186 landing/templates/layout.html:189
+msgid "Login/Sign Up"
+msgstr "ลงชื่อเข้าใช้/ลงทะเบียน"
+
+#: landing/templates/loginForm.html:20 landing/templates/loginForm.html:34
+msgid "Login"
+msgstr "ลงชื่อเข้าใช้"
+
+#: landing/templates/loginForm.html:23
+msgid "Username"
+msgstr "ชื่อผู้ใช้"
+
+#: landing/templates/loginForm.html:29
+msgid "Password"
+msgstr "พาสเวิร์ด"
+
+#: landing/templates/loginForm.html:38
+#, fuzzy
+#| msgid "No a member?"
+msgid "Not a member?"
+msgstr "ยังไม่ลงทะเบียน?"
+
+#: landing/templates/loginForm.html:39
+msgid "Sign Up"
+msgstr "ลงทะเบียน"
+
+#: landing/templates/news.html:59
+msgid "SEE ALL"
+msgstr "ดูข่าวทั้งหมด"
+
+#: landing/templates/newsDetail.html:6
+msgid "News Zone"
+msgstr "หน้าข่าวสาร"
+
+#, fuzzy
+#~| msgid "News"
+#~ msgid "News All"
+#~ msgstr "ข่าวสาร"
+
+#~ msgid "Social Media"
+#~ msgstr "โซเชี่ยลมีเดีย"
+
+#, fuzzy
+#~| msgid ""
+#~| "Lorem Ipsum is simply dummy text of the printing and typesetting "
+#~| "industry. Lorem Ipsum has been the industry's standard dummy text ever "
+#~| "since the 1500s, when an unknown printer took a galley of type and "
+#~| "scrambled it to make a type specimen book. It has survived not only five "
+#~| "centuries, but also the leap into electronic typesetting."
+#~ msgid ""
+#~ "Lorem Ipsum is simply dummy text of the printing and typesetting "
+#~ "industry. Lorem Ipsum has been the industry's standard dummy text ever "
+#~ "since the 1500s, when an unknown printer took a galley of type and "
+#~ "scrambled it to make a type specimen book. It has survived not only five "
+#~ "centuries, but also the leap into electronic typesetting, remaining "
+#~ "essentially unchanged."
+#~ msgstr ""
+#~ "เป็นเพียงข้อความจำลองของอุตสาหกรรมการพิมพ์และการเรียงพิมพ์ Lorem Ipsum "
+#~ "เป็นข้อความจำลองมาตรฐานของอุตสาหกรรมนับตั้งแต่ค.ศ. 1500 "
+#~ "เมื่อเครื่องพิมพ์ที่ไม่รู้จักนำถังประเภทหนึ่งมาและแย่งชิงไปทำหนังสือตัวอย่างประเภท "
+#~ "มันรอดมาได้ไม่เพียงแค่ห้าศตวรรษแต่ยังก้าวกระโดดสู่การเรียงพิมพ์อิเล็กทรอนิกส์"
+
+#~ msgid "Explore Knowledge Graph"
+#~ msgstr "สำรวจกราฟความรู้"
+
+#~ msgid "Language"
+#~ msgstr "ภาษา"
+
+#~ msgid "Data Zone"
+#~ msgstr "โซนข้อมูล"

@@ -1,0 +1,127 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+{% load i18n %}
+{% if messages %}
+<div class="alert alert-success" role="alert">
+  {% for message in messages %}
+  <b>{{message}}</b>
+  {% endfor %}
+</div>
+{% endif %}
+<div class="app-container">
+  <div id="banner">
+    <img class="banner-bg" src="{% static 'images/bg_banner.png' %}" />
+    <svg width='100%' height='100%' viewBox="0 0 375 135" preserveAspectRatio="none" class="banner-svg">
+      <path d="M 375 135 H 375 V 80 L 0 135" id="t-white" />
+      <path d="M 375 135 H 375 V 80 L 195 106.3" id="t-orange" />
+    </svg>
+    <div class="banner-inline-content">
+      <div class="banner-text-wrapper">
+        <span class="banner-text text-white">ECON TU</span>
+        <span class="banner-text text-orange">ANALYTICS</span>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <h1>{% trans "Our News and Release" %}</h1>
+    <div class="section-news-home">
+      <a class="news-seemore"href="{% url 'news' %}">{% trans "See more" %}
+        <img class="see-more"
+        src="{% static 'images_home/Icon - Next - Orange.png' %}" alt="more" />
+
+      </a>
+      <div class="card-v1-grid">
+        {% if newss %}{% for news in newss %}
+        <div class="card-v1">
+          <a class="card-link" href="{% url 'newsDetail' news.id %}">
+            <div class="card-img" style="background-image:url({{news.image.url}});">
+              <div class="overlay z-front">
+                <div class="overlay-content">
+                  <span data-news="{{ news.id }}"  class="hover" >{% trans "View News" %}</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-v1-text-container mt-2">
+              <span class="card-v1-title">{{ news.title|safe|truncatechars:45}}</span>
+              <span class="card-v1-desc">
+                {{ news.descriptions|safe|truncatechars:80 }}
+              </span>
+            </div>
+          </a>
+        </div>
+        {% endfor %} 
+      </div>
+      {% else %}
+      <h1 align="Center"><i lass="ii fas fa-circle-xmark icon-x"></i>{% trans "  404 Not Found, not any news. Please try add data news." %}</h1>
+      {% endif %}
+    </div>
+  </div>
+  <div class="section">
+    <h1>{% trans "Superset 1" %}</h1>
+    <img class="superset-1" align="center" alt="footer_econ"
+      src="{% static 'images_home/PIcture - Superset - 01.jpg' %}" />
+    <div>
+      <h3 align="Center">{% trans "Superset 2" %}</h3>
+      <img align="center"
+        style="max-width:100%;max-height:100%;height:calc(80px + (650 - 80 ) * ((100vw - 100px) / (1920 - 100)));"
+        alt="footer_econ" src="{% static 'images_home/PIcture - Superset - 02.png' %}">
+      <div>
+        <br>
+        <p align="Left" class="superset2"> <strong>{% trans "Knowledge Graph Explorer" %}</strong> <br><br>
+          {% trans "The career database survey system for research studies. By displaying the results in a dot graph (Scatter Plot), you can see an overview of the career data." %}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section overlay">
+  <h3 class="help-we" align="center"> {% trans "Help we know what you want?" %}</h3>
+  <div class="footer-app3" align="center">
+    {% comment %} Card 1 {% endcomment %}
+    <div class="card_news app3">
+      <div class="card-img all-app"><img class="bg-all-app" src="{% static 'images_home/whiteIcon03.png' %}" alt="img">
+        <div class="overlay">
+          <div class="overlay-content">
+            <a class="hover" href="https://web.knowledgegraph.analytics.econ.tu.ac.th/KnowledgeSkillStrategy">{% trans "Find Skill" %}</a>
+          </div>
+        </div>
+        <h2 class="word-all-app">Find your <br> skill strategy</h2>
+      </div>
+    </div>
+    <br>
+  
+    {% comment %} Card 2 {% endcomment %}
+    <div class="card_news app3">
+      <div class="card-img all-app"><img class="bg-all-app" src="{% static 'images_home/whiteIcon01.png' %}" alt="img">
+        <div class="overlay">
+          <div class="overlay-content">
+            <a class="hover" href="https://discovery.data.storemesh.com/">{% trans "Find Data" %}</a>
+          </div>
+        </div>
+        <h2 class="word-all-app">Find Data</h2>
+      </div>
+    </div>
+  
+    {% comment %} Card 3 {% endcomment %}
+    <div class="card_news app3">
+      <div class="card-img all-app"><img class="bg-all-app" src="{% static 'images_home/whiteIcon02.png' %}" alt="img">
+        <div class="overlay">
+          <div class="overlay-content">
+            <a class="hover" href="https://web.knowledgegraph.analytics.econ.tu.ac.th/KnowledgeExplorer">{% trans "Explore" %}</a>
+          </div>
+        </div>
+        <h2 class="word-all-app">Explore Knowledge <br> Graph</h2>
+      </div>
+    </div>
+    
+    {% comment %} footer {% endcomment %}
+  
+   
+  </div>
+</div>
+{% include "footer.html" %}
+</div>
+{% endblock %}
+

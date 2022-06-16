@@ -1,0 +1,94 @@
+{% extends 'layout.html' %} {% load static %} {% block content %}{% load i18n %}
+{% if messages %}
+        <div style="margin-bottom: -60px;"class="alert alert-primary" role="alert">
+            {% for message in messages %}<b>{{ message }}</b>{% endfor %}
+        </div>
+    {% endif %}
+<div class="container">
+    <h3 class="head-job" >Job Opportunities</h3>
+</div>
+
+<form action="postJob" method="post">
+    {% csrf_token %}
+    <div class="container py-5 h-50">
+        <h3 class="h4-job mar-top">Hire The Right Person</h3>
+                        <div align="left" class="form-outline mb-4">
+                            <label class="form-label" for="">Company name</label>
+                            <input type="text"
+                                   id="typeTextX-2"
+                                   class="form-control form-control-lg"
+                                   name="company"/>
+                        </div>
+                        <div align="left" class="form-outline mb-4">
+                            <label class="form-label" for="typeTextX-2">Job position</label>
+                            <input type="text"
+                                   id="typeTextX-2"
+                                   class="form-control form-control-lg"
+                                   name="job_position"/>
+                        </div>
+                        <div align="left" class="form-outline mb-4">
+                            <label class="form-label" for="typeTextX-2">Job description</label>
+                            <textarea
+                                   rows="5" 
+                                   cols="50"
+                                   id="typeTextX-2"
+                                   class="form-control form-control-lg"
+                                   name="job_desc"
+                                >
+                            </textarea>
+                        </div>
+                        <div align="left" class="form-outline mb-4">
+                            <label class="form-label" for="typeEmailX-2">Contact e-mail</label>
+                            <input type="email"
+                                   id="typeEmailX-2"
+                                   class="form-control form-control-lg"
+                                   name="email"/>
+                        </div>
+                        <div align="left" class="form-outline mb-4">
+                            <label class="form-label" for="typePasswordX-2">Link</label>
+                            <input type="url"
+                                   id="typeTextX-2"
+                                   class="form-control form-control-lg"
+                                   name="link"/>
+                        </div>
+                    
+                        <div align="Right" class="form-outline mb-4">
+                            <button class="btn btn-job"
+                                    type="submit">Post</button>
+                            <button class="btn btn-job-cc">Cancel</button>
+                        </div>
+                                <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div class="container history">
+    <h3 class="h4-job ">History</h3>
+
+{% if job_edit %}{% for job in job_edit %}
+<div class="card text-center card-job-opp">
+    <div align="Left" class="card-body">
+      <h5 class="card-title h-title-job">{{ job.title}}</h5>
+      <p class="card-text ">Company name : {{ job.company }}</p>
+      <p class="card-text p-job">Contact email : {{ job.email }}</p>
+      <p class="card-text p-job">Link : <a class="link-comp" href="{{ job.link }}">{{ job.link }}</a></p>
+      <p style="white-space: pre;" class="card-text p-job">Job description : <br>{{ job.descriptions |truncatechars:120 }}</p>
+      <div class="btn-right">
+        <a href="#" class="btn  btn-edit">Edit</a>
+        <a href="#" class="btn  btn-read-more">Read More</a>
+      </div>
+    </div>
+</div>
+{% endfor %}
+{% else %}
+  <h1 align="Center"><i lass="ii fas fa-circle-xmark icon-x"></i>{% trans "  404 Not Found, not any news. Please try add Job." %}</h1>
+  <br>
+{% endif %}
+
+</div>
+{% include "footer.html" %}
+{% endblock %}
