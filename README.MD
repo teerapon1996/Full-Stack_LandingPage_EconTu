@@ -1,6 +1,7 @@
-# Development by Teerapon Meesuk
+# This project development by Teerapon Meesuk
 - Full Stack website landing
 - Postgres Database in .env file
+- License by Company > "Digital Store mesh Limited"
 
 ## Deploy Landing
 ### Start Run Landing Page
